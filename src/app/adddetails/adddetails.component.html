@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<h1 style="text-align: center;">Add information</h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+                    <form #newform="ngForm" (ngSubmit)="addData(newform.value)">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" ngModel class="form-control" placeholder="Enter name">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" ngModel name="age" class="form-control" placeholder="Enter age">
+                        <label for="grade" class="form-label">Grade</label>
+                        <input type="text" ngModel name="grade" class="form-control" placeholder="Enter the grade you are in">
+                        <label for="school" class="form-label">School</label>
+                        <input type="text" ngModel name="school" class="form-control" placeholder="Enter school name"><br>
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

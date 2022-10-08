@@ -1,0 +1,22 @@
+<h1 style="text-align: center;">LOGIN</h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+                    <form >
+                        <label for="inputemail" class="form-label">Email</label>
+                        <input type="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Enter email">
+                        <label for="inputpass" class="form-label">Password</label>
+                        <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Enter password">
+                        <br><button (click)="handlelogin(email,password)" class="btn btn-success">LOGIN</button>
+                        <div>
+                            <br><button (click)="handleregister(email,password)" class="btn btn-success">REGISTER</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
